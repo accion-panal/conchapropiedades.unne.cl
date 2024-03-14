@@ -35,7 +35,7 @@ const MainCarousel = ({ data }) => {
                       </h2>
                       <p className='text-lg xl:text-xl text-white text-center my-3'>{slide.desc}</p>
                       <div className='flex justify-center'>
-                      <Link href='#AboutSectionScroll' smooth="true" duration={700}  offset={-130} className='inline-flex items-center drop-shadow-lg p-10 py-2 px-11 w-44 m-2  text-center  xl:w-44 xl:h-12 text-white bg-secondary rounded-sm hover:bg-secondary-400 duration-200 focus:ring-4 focus:outline-none focus:ring-primary-300 text-xl'>Ver más</Link>
+                      {slide.id !== 1 ? <a href='https://unne.cl/' target='_blank' className='inline-flex items-center drop-shadow-lg p-10 py-2 px-11 w-44 m-2  text-center  xl:w-44 xl:h-12 text-white bg-secondary-400 rounded-sm hover:bg-secondary-300 duration-200 focus:ring-4 focus:outline-none focus:ring-primary-300 text-lg'>Ir a unne</a> : <Link href='#AboutSectionScroll' smooth="true" duration={700}  offset={-130} className='inline-flex items-center drop-shadow-lg p-10 py-2 px-11 w-44 m-2  text-center  xl:w-44 xl:h-12 text-white bg-secondary-400 rounded-sm hover:bg-secondary-300 duration-200 focus:ring-4 focus:outline-none focus:ring-primary-300 text-xl'>Ver más</Link> }
                       </div>  
                     </div>
                   </Fade>
